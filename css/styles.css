@@ -1,211 +1,268 @@
-:root {
+:root{
     --primary-text-color: rgba(117, 117, 117, 1);
-    --title-text-color: #212121;
-    --hero-title-color: #ffffff;
-    --accent-color: #2196F3;
+    --primary-title-color: #212121;
+    --primary-accent-color: #ffffff;
+    --secondary-accent-color:#2196f3;
     --dark-background: #2F303A;
     --light-background: #F5F4FA;
     --box-shadow: rgba(0, 0, 0, 0.14);
     --button-hover: #188CE8;
+    --header-border: #ececec;
+    --portfolio-box-border: #eeeeee;
+    --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
-body {
+
+body{
+    width: 1600px;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.2;
     letter-spacing: 0.03em;
-    background-color: white;
-    color: var(--primary-text-color)
+    color: var(--primary-text-color);
+    background-color: var(--primary-accent-color);
 }
-a{
+.link{
+    font-style: normal;
     text-decoration: none;
 }
-ul {
+.list{
     list-style: none;
-}
-.container{
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
 }
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-/* шапка */
-.site-nav {
+.container{
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* header */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-nav,
+.link-nav,
+.contact-nav{
+    display: flex;
+}
+.nav-item{
+    padding-left: 50px;
+}
+.nav-list{
     font-weight: 500;
     letter-spacing: 0.02em;
+    border-bottom: 1px solid var(--header-border);
 }
-.site-nav .link {
-    color: var(--title-text-color);
-}
-.site-nav .link.current {
-    color: var(--accent-color);
-}
-.mail,
-.tel {
-    color: var(--primary-text-color);
-}
-.site-nav .mail:hover,
-.site-nav .mail:focus {
-    color: var(--accent-color);
-}
-.logo {
+.logo{
     font-family: 'Raleway', sans-serif;
     font-style: normal;
+    text-decoration: none;
     font-weight: 700;
     font-size: 26px;
-    color: var(--accent-color);
+    color: var(--secondary-accent-color);
 }
-.logo-black-accent {
-    color: var(--title-text-color);
+.logo-black-accent{
+    color: var(--primary-title-color);
+}
+.nav-list .link{
+    color: var(--primary-title-color);
+}
+.nav-list .link.current{
+    color: var(--secondary-accent-color);
+}
+.mail,
+.tel{
+    color: var(--primary-text-color);
+}
+.nav-list .mail:hover,
+.nav-list .mail:focus{
+    color: var(--secondary-accent-color);
 }
 
-/* страница студия */
+/* page studio */
 
-.hero {
+.hero{
+    text-align: center;
     background-color: var(--dark-background);
-    }
+}
 .hero-title{
+    margin: auto;
+    width: 696px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--hero-title-color);
+    color: var(--primary-accent-color);
 }
 .hero-button{
+    margin-top: 30px;
+    min-width: 200px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.9;
-    display: flex;
-    align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: var(--hero-title-color);
-    background: var(--accent-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--primary-accent-color);
+    background: var(--secondary-accent-color);
+    box-shadow: 0px 4px 4px var(--box-shadow);
     border-radius: 4px;
     cursor: pointer;
 }
-.hero-button:hover{
+.hero-button:hover,
+.hero-button:focus{
     background-color: var(--button-hover);
 }
-.instruments-title{
+.instruments-box:not(:first-child){
+    width: 270;
+    align-items: flex-start;
+    margin-left: 30px;
+}
+.instruments-title {
     font-weight: 700;
     text-transform: uppercase;
-    color: var(--title-text-color);
+    color: var(--primary-title-color);
 }
-.instruments-text{
+.instruments-text {
+    margin-top: 10px;
     line-height: 24px;
     color: var(--primary-text-color);
 }
 .secondary-titles {
+    text-align: center;
     font-weight: 700;
     font-size: 36px;
-    text-align: center;
-    color: var(--title-text-color);
+    color: var(--primary-title-color)
 }
-.team {
+.items-list{
+    display: flex;
+    align-items: center;
+}
+.items-box:not(:first-child){
+    margin-left: 30px;
+}
+.info-list {
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+}
+.team{
     background-color: var(--light-background);
 }
 .team-card{
-    width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1635px;
+    margin-left: 30px;
     box-shadow: 0px 1px 3px var(--box-shadow), 0px 1px 1px var(--box-shadow), 0px 2px 1px var(--box-shadow);
     border-radius: 0px 0px 4px 4px;
-    background-color: var(--hero-title-color);
+    background-color: var(--primary-accent-color);
 }
-.team-title{
+.team-title {
     font-weight: 500;
     font-size: 16px;
-    text-align: center;
-    color: var(--title-text-color);
+    color: var(--primary-title-color);
 }
-.team-text{
+.team-text {
     font-size: 16px;
-    text-align: center;
     color: var(--primary-text-color);
 }
 
-/* страница портфолио */
+/* page portfolio */
+
 .filter-list{
+    display: flex;
+    justify-content: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    color: var(--title-text-color);
+    color: var(--primary-title-color);
 }
 .secondary-button{
+    align-content: center;
+    padding: 6px 22px;
+    margin-right: 8px;
+    margin-bottom: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
     cursor: pointer;
-    color: var(--title-text-color);
+    color: var(--primary-title-color);
     background-color: var(--light-background);
     box-shadow: 0px 3px 1px var(--box-shadow), 0px 1px 2px var(--box-shadow), 0px 2px 2px var(--box-shadow);
     border: none;
 }
 .secondary-button:hover,
 .secondary-button:focus{
-    color: var(--hero-title-color);
-    background-color: var(--accent-color);
+    color: var(--primary-accent-color);
+    background-color: var(--secondary-accent-color);
 }
-.project-box{
-    box-sizing: border-box;
-    position: absolute;
+.project-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -15px;
+    margin-left: -15px;
+}
+.progect-card{
     width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 696px;
-    background: var(--hero-title-color);
-    border: none;
+    background-color: var(--primary-accent-color);
+    border: 1px solid var(--portfolio-box-border);
 }
-.progects-title{
+.project-list > .progect-card{
+    flex-basis: (100%/3 -15px);
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.progect-title{
+    margin-top: 20px;
+    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    color: var(--title-text-color);
+    color: var(--primary-title-color);
 }
-.progects-text{
+.progect-text{
+    margin-top: 4px;
+    margin-left: 24px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--primary-text-color);
 }
 
-/* подвал */
+/* footer */
+
 .footer-list{
     font-style: normal;
     line-height: 1.71;
     background-color: var(--dark-background);
 }
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    color: var(--accent-color);
+.footer-items{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
 }
-.logo-white-accent {
-    color: var(--hero-title-color);
-}
-.link{
-    font-style: normal;
+.logo-white-accent{
+    color: var(--primary-accent-color);
 }
 .address{
-    color: var(--hero-title-color);
+    margin-top: 20px;
+    color: var(--primary-accent-color);
 }
 .contact{
-    color: rgba(255, 255, 255, 0.6);
+    margin-top: 9px;
+    color: var(--footer-contacts-color);
 }
-.link .address:hover,
-.link .contact:hover,
-.link .address:focus,
-.link .contact:focus{
-    color: var(--accent-color);
+.address:hover,
+.contact:hover,
+.address:focus,
+.contact:focus{
+    color: var(--secondary-accent-color);
 }
