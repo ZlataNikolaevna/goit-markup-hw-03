@@ -246,7 +246,6 @@ body{
 }
 .footer-items{
     display: flex;
-    align-items: flex-start;
     flex-direction: column;
 }
 .logo-white-accent{
