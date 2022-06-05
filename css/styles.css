@@ -13,8 +13,6 @@
 }
 
 body{
-    width: 1600px;
-    margin: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     line-height: 1.2;
@@ -22,21 +20,28 @@ body{
     color: var(--primary-text-color);
     background-color: var(--primary-accent-color);
 }
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .link{
     font-style: normal;
     text-decoration: none;
 }
 .list{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
 .container{
+    margin-left: 215px;
     justify-content: center;
     width: 1200px;
-    margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -44,7 +49,12 @@ body{
 /* header */
 .nav{
     display: flex;
-    justify-content: space-between;
+}
+.link-nav{
+    margin-left: auto;
+}
+.contact-nav{
+    margin-left: 331px;
 }
 .logo-nav,
 .link-nav,
@@ -52,7 +62,9 @@ body{
     display: flex;
 }
 .nav-item{
+    padding-top: 32px;
     padding-left: 50px;
+    padding-bottom: 32px;
 }
 .nav-list{
     font-weight: 500;
@@ -60,6 +72,9 @@ body{
     border-bottom: 1px solid var(--header-border);
 }
 .logo{
+    padding-top: 24px;
+    padding-left: 215px;
+    padding-bottom: 24px;
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     text-decoration: none;
@@ -70,14 +85,14 @@ body{
 .logo-black-accent{
     color: var(--primary-title-color);
 }
-.nav-list .link{
+.nav-item .link{
     color: var(--primary-title-color);
 }
-.nav-list .link.current{
+.nav .link.current{
     color: var(--secondary-accent-color);
 }
-.mail,
-.tel{
+.nav-item .mail,
+.nav-item .tel{
     color: var(--primary-text-color);
 }
 .nav-list .mail:hover,
@@ -88,6 +103,9 @@ body{
 /* page studio */
 
 .hero{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    width: 1600px;
     text-align: center;
     background-color: var(--dark-background);
 }
@@ -102,6 +120,7 @@ body{
     color: var(--primary-accent-color);
 }
 .hero-button{
+    width: 200px;
     margin-top: 30px;
     min-width: 200px;
     font-weight: 700;
@@ -112,6 +131,7 @@ body{
     color: var(--primary-accent-color);
     background: var(--secondary-accent-color);
     box-shadow: 0px 4px 4px var(--box-shadow);
+    border: none;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -125,6 +145,8 @@ body{
     margin-left: 30px;
 }
 .instruments-title {
+    margin: 0;
+    padding: 0;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--primary-title-color);
@@ -134,7 +156,12 @@ body{
     line-height: 24px;
     color: var(--primary-text-color);
 }
+.info{
+    padding-top: 0;
+}
 .secondary-titles {
+    margin: 0;
+    padding: 0;
     text-align: center;
     font-weight: 700;
     font-size: 36px;
@@ -153,6 +180,7 @@ body{
     margin-top: 50px;
 }
 .team{
+    width: 1600px;
     background-color: var(--light-background);
 }
 .team-card{
@@ -174,6 +202,7 @@ body{
 /* page portfolio */
 
 .filter-list{
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     font-weight: 500;
@@ -186,7 +215,6 @@ body{
     align-content: center;
     padding: 6px 22px;
     margin-right: 8px;
-    margin-bottom: 50px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
@@ -204,7 +232,7 @@ body{
 }
 .project-list{
     padding: 0;
-    margin: 0;
+    margin-top: 56px;
     display: flex;
     flex-wrap: wrap;
     margin-top: -15px;
@@ -240,6 +268,10 @@ body{
 /* footer */
 
 .footer-list{
+    outline: 1px solid thistle;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 1600px;
     font-style: normal;
     line-height: 1.71;
     background-color: var(--dark-background);
@@ -253,9 +285,12 @@ body{
 }
 .address{
     margin-top: 20px;
+    padding-left: 215px;
     color: var(--primary-accent-color);
 }
 .contact{
+    margin-top: 9px;
+    padding-left: 215px;
     margin-top: 9px;
     color: var(--footer-contacts-color);
 }
