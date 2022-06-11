@@ -235,22 +235,19 @@ img{
     margin-top: 56px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-left: -15px;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 .progect-card{
     width: 370px;
     background-color: var(--primary-accent-color);
-    border: 1px solid var(--portfolio-box-border);
 }
 .project-list > .progect-card{
     flex-basis: (100%/3 -15px);
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .progect-title{
-    margin-top: 20px;
-    margin-left: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -259,10 +256,15 @@ img{
 }
 .progect-text{
     margin-top: 4px;
-    margin-left: 24px;
     font-size: 16px;
     line-height: 1.9;
     color: var(--primary-text-color);
+}
+.card-item{
+    padding: 20px 24px;
+    border-right: 1px solid var(--portfolio-box-border);
+    border-left: 1px solid var(--portfolio-box-border);
+    border-bottom: 1px solid var(--portfolio-box-border);
 }
 
 /* footer */
