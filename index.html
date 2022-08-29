@@ -10,117 +10,103 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header class="nav-list">
-        <div class="nav">
-            <nav class="logo-nav">
-                <a href="index.html" class="logo">Web<span class="logo-black-accent">Studio</span></a>
-                <ul class="list link-nav">
-                    <li class="nav-item"><a href="./index.html" class="link current">Студия</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                    <li class="nav-item"><a href="" class="link">Контакты</a></li>
+    <header>
+        <div class="container  nav-list">
+            <nav class="nav  nav-list">
+                <a href="index.html" class="link logo">Web<span class="logo-header-accent">Studio</span></a>
+                <ul class="list nav-list">
+                    <li><a href="index.html" class="link  nav-item current">Студия</a></li>
+                    <li><a href="portfolio.html" class="link nav-item">Портфолио</a></li>
+                    <li><a href="" class="link nav-item">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="list contact-nav">
-                <li class="nav-item"><a href="mailto:info@devstudio.com" class="link mail">info@devstudio.com</a></li>
-                <li class="nav-item"><a href="tel:+380961111111" class="link tel">+38 096 111 11 11</a></li>
+            <ul class="list  nav-list">
+                <li><a href="mailto:info@example.com" class="link nav-contacts">info@devstudio.com</a></li>
+                <li><a href="tel:+380991111111" class="link nav-contacts">+38 096 111 11 11</a></li>
             </ul>
         </div>
     </header>
     <main>
         <section class="hero">
-            <!-- шапка -->
-            <div>
+            <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                 <button type="button" class="hero-button">Заказать услугу</button>
             </div>
-        </section>   
+        </section>
         <section class="section">
-            <!-- инструменты работы -->
-            <div class="container"> 
-                <h2 hidden>В работе нам помогают:</h2>
-                <ul class="list items-list">
-                    <li class="instruments-box">
+            <div class="container">
+                <h2 hidden>Инструменты работы</h2>
+                <ul class="list instruments-list"> 
+                    <li class="instruments-item">
                         <h3 class="instruments-title">Внимание к деталям</h3>
                         <p class="instruments-text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="instruments-box">
+                    <li class="instruments-item">
                         <h3 class="instruments-title">Пунктуальность</h3>
                         <p class="instruments-text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="instruments-box">
+                    <li class="instruments-item">
                         <h3 class="instruments-title">Планирование</h3>
                         <p class="instruments-text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="instruments-box">
+                    <li class="instruments-item">
                         <h3 class="instruments-title">Современные технологии</h3>
                         <p class="instruments-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
-            </div>
-        </section> 
-        <section class="section info">
-            <!-- чем мы занимаемся -->
+            </div>            
+        </section>
+        <section class="section">
             <div class="container">
-                <h2 class="secondary-titles">Чем мы занимаемся</h2>
-                <ul class="list info-list">
-                    <li class="items-box">
-                        <img src="./images/img1.jpg" alt="box1-ciding" width="370">
-                    </li>
-                    <li class="items-box">
-                        <img src="./images/img2.jpg" alt="box2-vizualization" width="370">
-                    </li>
-                    <li class="items-box">
-                        <img src="./images/img3.jpg" alt="box3-colorization" width="370">
-                    </li>
+                <h2 class="content-title">Чем мы занимаемся</h2>
+                <ul class="list  content-item">
+                    <li class="content-card"><img src="./images/img1.jpg" alt="Кодинг" width="370"></li>
+                    <li class="content-card"><img src="./images/img2.jpg" alt="Оформление" width="370"></li>
+                    <li class="content-card"><img src="./images/img3.jpg" alt="Дизайн" width="370"></li>
                 </ul>
-            </div>
-        </section> 
+            </div>            
+        </section>
         <section class="section team">
-            <!-- наша команда -->
             <div class="container">
-                <h2 class="secondary-titles">Наша команда</h2>
-                <ul class="list info-list">
+                <h2 class="content-title">Наша команда</h2>
+                <ul class="list content-item">
                     <li class="team-card">
-                        <img src="./images/img4.jpg" alt="Product Designer Игорь Демьяненко" width="270">
+                        <img src="./images/img4.jpg" alt="Игорь Демьяненко" width="270">
                         <h3 class="team-title">Игорь Демьяненко</h3>
-                        <p class="team-text">Product Designer</p>
+                        <p>Product Designer</p>
                     </li>
                     <li class="team-card">
-                        <img src="./images/img5.jpg" alt="Frontend Developer Ольга Репина" width="270">
+                        <img src="./images/img5.jpg" alt="Ольга Репина" width="270">
                         <h3 class="team-title">Ольга Репина</h3>
-                        <p class="team-text">Frontend Developer</p>
+                        <p>Frontend Developer</p>
                     </li>
                     <li class="team-card">
-                        <img src="./images/img6.jpg" alt="Marketing Николай Тарасов" width="270">
+                        <img src="./images/img6.jpg" alt="Николай Тарасов" width="270">
                         <h3 class="team-title">Николай Тарасов</h3>
-                        <p class="team-text">Marketing</p>
+                        <p>Marketing</p>
                     </li>
                     <li class="team-card">
-                        <img src="./images/img7.jpg" alt="UI Designer Михаил Ермаков" width="270">
+                        <img src="./images/img7.jpg" alt="Михаил Ермаков" width="270">
                         <h3 class="team-title">Михаил Ермаков</h3>
-                        <p class="team-text">UI Designer</p>
+                        <p>UI Designer</p>
                     </li>
                 </ul>
-            </div>
-        </section > 
+            </div>            
+        </section>
     </main>
-    <footer class="footer-list">
-        <div class="footer-items">
-            <a href="index.html" class="link logo">Web<span class="logo-white-accent">Studio</span></a>
+    <footer class="footer">
+        <div class="container">
+            <a href="index.html" class="link logo">Web<span class="logo-footer-accent">Studio</span></a>
             <address>
                 <ul class="list">
-                    <li>
-                        <a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="link address">г. Киев, пр-т Леси Украинки, 26</a>
-                    </li>
-                    <li>
-                        <a href="mailto:info@example.com" class="link contact">info@example.com</a>
-                    </li>
-                    <li>
-                        <a href="tel:+380961111111" class="link contact">+38 096 111 11 11</a>
-                    </li>
+                    <li><a href="https://bit.ly/3pXMvUd" 
+                        target="_blank" rel="noopener noreferrer nofollow" class="link address">
+                        г. Киев, пр-т Леси Украинки, 26</a></li>
+                    <li><a href="mailto:info@example.com" class="link footer-contacts">info@example.com</a></li>
+                    <li><a href="tel:+380991111111" class="link footer-contacts">+38 099 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
-    </footer>
+        </div>   
+    </footer>    
 </body>
 </html>
